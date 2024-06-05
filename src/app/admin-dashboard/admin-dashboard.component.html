@@ -1,0 +1,50 @@
+<div class="bg-white flex flex-col min-h-screen">
+  <app-nav-bar-admin />
+  <main class="flex flex-grow justify-center items-center">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+      <h2 class="text-2xl font-bold mb-4">Inicio de Sesión</h2>
+      <p class="mb-6">
+        Por favor, ingrese su nombre de usuario y contraseña para acceder al
+        panel de administración.
+      </p>
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="username" class="block text-sm font-medium text-gray-700"
+            >Nombre de Usuario</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="mt-1 p-2 border border-gray-300 rounded w-full"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium text-gray-700"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 p-2 border border-gray-300 rounded w-full"
+            required
+          />
+        </div>
+        <div class="flex justify-between items-center">
+          <button type="submit" class="bg-black text-white py-2 px-4 rounded">
+            Iniciar Sesión
+          </button>
+          <button
+            type="button"
+            class="py-2 px-4 rounded border border-gray-300"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <app-footer />
+</div>

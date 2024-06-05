@@ -1,0 +1,21 @@
+<div class="bg-white flex flex-col min-h-screen">
+  <app-nav-bar-home />
+  <main class="flex-grow">
+    <app-header />
+
+    <section class="text-center py-10 bg-white">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        @for (card of cards; track card.id) {
+        <div>
+          <div class="text-4xl mb-2">{{ card.icon }}</div>
+          <h2 class="text-xl font-semibold mb-2">{{ card.title }}</h2>
+          <p>{{ card.description }}</p>
+        </div>
+        }
+      </div>
+    </section>
+  </main>
+  <app-footer />
+</div>
